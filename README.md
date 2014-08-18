@@ -8,7 +8,7 @@ A http://github.com/dcramer/sentry quickstart project for Red Hat(c) OpenShift(c
 Requirements
 ------------
 
-- An Openshift account, with at least 3 gears available on the free PaaS https://openshift.redhat.com
+- An Openshift account, with at least 2 gears available on the free PaaS https://openshift.redhat.com
 - Openshift command-line tools: https://www.openshift.com/get-started#cli
 - Git SCM: http://git-scm.com
 
@@ -33,9 +33,9 @@ Replace **APP_NAME**'s value with your chosen app name. I've chosen **sentryweb*
     $ export APP_NAME=sentryweb
     $ export APP_NAMESPACE=MyOpenshiftNamespace
 
-**Create Openshift application with Python 2.7, MongoDB 2.4, Postgres 8.4 cartridges, enabling scaling**
+**Create Openshift application with Python 2.7, Postgres 9.2 cartridges, enabling scaling**
 
-    $ rhc app create --scaling $APP_NAME python-2.7 mongodb-2.4 postgresql-8.4
+    $ rhc app create --scaling $APP_NAME python-2.7 postgresql-9.2
 
 **Merge the quickstart repo with the git repo created by the Openshift client**
 
@@ -84,7 +84,7 @@ Django administration is also available at
 Further Reading
 ---------------
 
-* http://github.com/dcramer/sentry
+* https://github.com/getsentry/sentry/
 * http://sentry.readthedocs.org
 
 Contributing
